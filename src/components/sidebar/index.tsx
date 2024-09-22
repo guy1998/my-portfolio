@@ -35,7 +35,7 @@ export const SidebarView = () => {
                    className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
                    aria-label="Sidebar">
                 <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 sidebar">
-                    <h1 className={'relative ml-3 text-white text-2xl font-sans font-extrabold cursor-pointer'}>Besjon<span className={'nav-point'}>.</span></h1>
+                    <h1 className={'relative ml-3 text-white text-2xl font-sans font-extrabold cursor-pointer'}>Aldrin<span className={'nav-point'}>.</span></h1>
 
                     <ul className="space-y-2 font-medium sidebar-entries">
                         {Object.entries(sidebarEntries).map(([menu, IconElement]) => (
@@ -63,7 +63,7 @@ export const SidebarView = () => {
                         ))}
                     </ul>
 
-                    <div id="dropdown-cta" className="p-4 mt-16 rounded-lg bg-white" role="alert">
+                    {/* <div id="dropdown-cta" className="p-4 mt-16 rounded-lg bg-white" role="alert">
                         <div className="flex items-center mb-3">
                             <span
                                 className="bg-yellow-300 text-orange-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded">Disclaimer</span>
@@ -83,10 +83,10 @@ export const SidebarView = () => {
                         </p>
                         <a className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300"
                            href="#">Original Bolby Design - Check it out</a>
-                    </div>
+                    </div> */}
 
                     <div className={'absolute bottom-2 left-12 text-gray-400 text-xs tracking-widest text-center'}>
-                        <p>&copy; {new Date().getFullYear()} Besjon Cifliku</p>
+                        <p>&copy; {new Date().getFullYear()} Cifliku bros</p>
                     </div>
                 </div>
             </aside>
