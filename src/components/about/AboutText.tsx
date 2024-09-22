@@ -14,15 +14,15 @@ export const AboutText = () => {
             colorClass: 'bg-yellow-400'
         },
         {
-            title: 'Security',
+            title: 'Machine learning',
             percentage: '98%',
             subscription: '98 %',
             colorClass: 'bg-green-600'
         },
         {
-            title: 'Automation & Testing',
-            percentage: '90%',
-            subscription: '90 %',
+            title: 'Cyber security',
+            percentage: '85%',
+            subscription: '85 %',
             colorClass: 'bg-red-600'
         }
     ];
@@ -31,10 +31,11 @@ export const AboutText = () => {
         <div className="about-text shadow-dark" style={ styles?.aboutText }>
             <div className={'paragraph'} style={  styles?.paragraph }>
                 <p>
-                    I am Besjon, an engineer with passion to develop amazing software and write clean code.
-                    I like to play around with AI and develop games as well.
+                    I am Aldrin, an engineer with passion to develop amazing software and write clean code.
+                    My main focus is on Ai and Robotics but of course I can do anything. After all isn't that
+                    the purpose of a software {";)"} ?
                 </p>
-                <a href={'#download'} className={'button'}>Open CV_Skills-Editor</a>
+                <a href='/aldrin-resume.pdf' download={"Aldrins_resume.pdf"} target='_blank' className={'button'}>Open CV_Skills-Editor</a>
             </div>
             <div className={'about-skills'} style={ styles?.aboutSkills }>
                 {skillsSection.map((skill) => (

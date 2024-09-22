@@ -23,7 +23,7 @@ const Fade = forwardRef(function Fade(props: any, ref) {
         to: {
             opacity: open ? 1 : 0,
             display: 'flex',
-            'justify-content': 'center',
+            justifyContent: 'center',
             outline: 'none',
             width: '62%',
             position: 'absolute'
