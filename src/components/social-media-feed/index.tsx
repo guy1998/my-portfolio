@@ -28,37 +28,50 @@ export const SocialAboutMeText = () => {
         💻 and build awesome tools.
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        I cannot say I am a great designer 🎨 as this page is based on designs I
-        have seen from other talented people. I am focused on efficiency, data
-        handling and accessibility of the systems. However, this is what I like
-        about software development and the <b>Open-Source</b> community.
-        Everything you can see and imagine, can be built with a few lines of
-        code.
+        I have studied Software Engineering for my bachelor's, an experience
+        that has helped me deepen my knowledge on software architecture,
+        algorithms, software security and so on. When I first started I used to
+        imagine this computer world that was so different from ours, so
+        innovative and unreachable. After diving into it, however, I have
+        understood how much of a replica of real world a software is. And this
+        has made me love what I do more.
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        I have studied about Computer Science where I{`'`}ve deepen my knowledge
-        in IT Security, AI & Machine Learning 🤖. Now, I am pursuing a doctorate
-        degree in AI 🦾. My goal is to make AI more accessible, explainable and
-        trustworthy so everyone can use it without concerns about data privacy.
+        Currently, I am studying Robotics 🤖 at TU Dortmund. As a die hard Iron
+        Man fan this is a dream come true for me. I really believe that one day
+        robots will fix many of the issues humanity is facing and us as people
+        will have the time to enjoy this beautiful world we have right here.
+        However, I can't help but wonder will the robots become extremely
+        advanced and deny our existence 🤔? {"  "}
+        "A creator cannot be real, this universe is a mistake" - some robot in
+        the future probably.
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        I like public speaking, although I am a bit shy. I like team work and I
-        can bring many innovative ideas to the table. I have an eye-catching
-        about system bugs 🐞. My peers would say that I am too quick with
-        providing creative solution before the deadline in a very good quality.
-        Unfortunately, I like the perfection and perfectionism usually kills the
-        good.
+        Anyway, that is enough for you to understand one of my hobbies is
+        philosophy 🧠. I also have a thing for sports ⚽ and politics 🗣️. Would
+        never say no to a good debate. That said, my main focus is creating and
+        I think computers and programming especially have boosted creativity to
+        unprecedented levels. That is why I love what I do!
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        I believe an important part of engineering is not the code, but the
-        approach you decide to solve the problem. Everyone knows how to code. It
-        is so easy to learn programming, online bootcamp, StackOverflow or
-        Chat-GPT can teach you to code. However I think a good engineer knows
-        the ins and outs to the craft.
+        There are many things I would love to share about myself. And there are
+        plenty of things I am sure I would find interesting about you. So
+        whether you need an engineer or you need a new connection
+        <a
+          href={`#Contact`}
+          onClick={(event) => {
+            event?.preventDefault();
+            document
+              ?.getElementById("Contact")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          style={{ textDecoration: 'underline', color: 'purple' }}
+        >
+          {" "}hit me up!
+        </a>{" "}
+        I would be thrilled to get to know you!
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        A great engineer should know the trade offs of the system and should be
-        committed to the continuous journey of self-improvement and learning.{" "}
         <br></br>
         <br></br>
         <span className={"italic"}>
@@ -67,7 +80,7 @@ export const SocialAboutMeText = () => {
         </span>
       </p>
       <p className={"text-lg mb-6"}>Do not forget to have fun!! 😜</p>
-      <p className={"text-lg text-right w-full"}>Made with ❤️ - Besjon</p>
+      <p className={"text-lg text-right w-full"}>❤️ - Aldrin</p>
     </div>
   );
 };
@@ -127,7 +140,7 @@ const SocialMediaDetails = (post: any) => {
       />
       <div className={"flex justify-between items-center ml-2 w-full"}>
         <div className={"flex flex-col justify-start"}>
-          <h3 className={"font-bold mr-3"}>besjoncifliku 🌟</h3>
+          <h3 className={"font-bold mr-3"}>aldrincifliku 🌟</h3>
           <p className={"text-gray-300 flex items-center"}>
             &#x2022; {post.date}
           </p>
@@ -205,11 +218,16 @@ const SocialMediaPost = (post: any) => {
         <div className={"flex justify-end text-gray-300 mb-2"}>
           <PushPinOutlinedIcon />
           Pinned by <span className={"text-gray-300 font-bold ml-2"}> @</span>
-          <span className={"text-gray-300 underline font-bold"}>bcifliku</span>
+          <span className={"text-gray-300 underline font-bold"}>
+            aldrincifliku
+          </span>
         </div>
       )}
       <SocialMediaDetails {...post} />
-      <div className={"p-8 pl-14 pr-14 animated-social-card rounded-xl"} style={styles?.animatedSocialCard}>
+      <div
+        className={"p-8 pl-14 pr-14 animated-social-card rounded-xl"}
+        style={styles?.animatedSocialCard}
+      >
         <h2 className={"text-2xl font-bold mb-3"}>{post.title}</h2>
         <p
           className={"text-lg mb-2"}
@@ -220,7 +238,7 @@ const SocialMediaPost = (post: any) => {
           }}
         ></p>
         <button
-          onClick={() => setReadMore(!readMore)}
+          onClick={() => window.open(post.redirectLink, "_blank")}
           className={"text-gray-800 hover:text-gray-400 btn-arrow ease-in-out"}
         >
           {readMore ? (
@@ -268,7 +286,10 @@ const SocialMediaPost = (post: any) => {
 
 export const SocialMediaFeed = () => {
   return (
-    <div className={"flex flex-col justify-center mt-3"} style={{ width: "100%" }}>
+    <div
+      className={"flex flex-col justify-center mt-3"}
+      style={{ width: "100%" }}
+    >
       {SOCIAL_MEDIA_POSTS.map((post: any) => (
         <SocialMediaPost key={post.id} {...post} />
       ))}
