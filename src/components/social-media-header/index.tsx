@@ -27,7 +27,7 @@ export const SocialMediaHeader = () => {
         style={styles?.socialMediaHardcover}
       >
         {/*TODO Needs refactor to reduce CPU usage, clear state handling in component unmount */}
-        {/*<DinoGame />*/}
+        {/* <DinoGame /> */}
       </div>
       <Image
         src={UserProfileImg}

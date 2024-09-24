@@ -3,7 +3,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import ChatIcon from '@mui/icons-material/Chat';
-import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import '../../sass/_sidebar.scss';
 
@@ -12,7 +11,6 @@ const sidebarEntries = {
     'About': PermIdentityIcon,
     'Research': BusinessCenterIcon,
     'Projects': AssignmentTurnedInIcon,
-    'Blog': DriveFileRenameOutlineIcon,
     'Contact': ChatIcon
 };
 

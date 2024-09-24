@@ -13,10 +13,6 @@ const ProjectElement = (props: any) => {
   const [open, setOpen] = useState(false);
   const style = props.style;
 
-  const handleUpdateState = (newState: boolean) => {
-    setOpen(newState);
-  };
-
   const handleOpen = () => {
     setOpen(true);
   };
@@ -42,6 +38,13 @@ const ProjectElement = (props: any) => {
         onClick={handleOpen}
       >
         <div className={"project-image"}>
+          <img
+            width={"100%"}
+            height={"100%"}
+            style={{ borderRadius: '15px' }}
+            src={project.image[0]}
+            loading="lazy"
+          />
           <h2>{project.title}</h2>
         </div>
         <div className={"project-info"}>
@@ -58,22 +61,12 @@ const ProjectElement = (props: any) => {
           </span>
         </div>
       </div>
-      {/* {open &&
-                <CenteredModal
-                    key={project.title}
-                    openModal={open}
-                    closeModal={handleUpdateState}
-                    contentContainerChild={ <ProjectModal {...project} /> }
-                />
-            } */}
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
       >
         <Box sx={boxStyle}>
-            <ProjectModal {...project} />
+          <ProjectModal {...project} />
         </Box>
       </Modal>
     </>

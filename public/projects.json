@@ -3,7 +3,7 @@
     "title": "Project 1",
     "description": "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
     "category": ["all", "javascript", "frontend"],
-    "image": ["url"],
+    "image": ["/ai_image.webp"],
     "date": "2020-04-10",
     "type": "project",
     "tech": "Angular, Java, Javascript, Typescript, Node JS",
