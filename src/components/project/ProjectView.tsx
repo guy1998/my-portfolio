@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useInView, useSpring, animated } from "@react-spring/web";
 import { buildInteractionObserverThreshold } from "@/utils/Threshold.utils";
-import { CenteredModal } from "@/components/_generics/CenteredModal";
 import { Box, useMediaQuery } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import "../../sass/_general.scss";

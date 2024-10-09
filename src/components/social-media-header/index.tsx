@@ -6,10 +6,6 @@ import Image from "next/image";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import CakeOutlinedIcon from "@mui/icons-material/CakeOutlined";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
-import BookIcon from "@mui/icons-material/Book";
-
-// TODO Optimize dino game for production
-import { DinoGame } from "@/components/dino-game";
 import { ResponsivenessContext } from "@/contexts/breakpoint-context";
 
 export const SocialMediaHeader = () => {

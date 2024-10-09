@@ -28,7 +28,7 @@ export const SocialAboutMeText = () => {
         💻 and build awesome tools.
       </p>
       <p className={"text-lg mt-4 mb-4"}>
-        I have studied Software Engineering for my bachelor's, an experience
+        I have studied Software Engineering for my bachelor&apos;s, an experience
         that has helped me deepen my knowledge on software architecture,
         algorithms, software security and so on. When I first started I used to
         imagine this computer world that was so different from ours, so
@@ -41,7 +41,7 @@ export const SocialAboutMeText = () => {
         Man fan this is a dream come true for me. I really believe that one day
         robots will fix many of the issues humanity is facing and us as people
         will have the time to enjoy this beautiful world we have right here.
-        However, I can't help but wonder will the robots become extremely
+        However, I can&apos;t help but wonder will the robots become extremely
         advanced and deny our existence 🤔? {"  "}
         "A creator cannot be real, this universe is a mistake" - some robot in
         the future probably.
