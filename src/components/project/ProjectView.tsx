@@ -46,7 +46,7 @@ const ProjectElement = (props: any) => {
             src={project.image[0]}
             loading="lazy"
           />
-          <h2>{project.title}</h2>
+          <h2  style={{ color: 'purple' }}>{project.title}</h2>
         </div>
         <div className={"project-info"}>
           <div className={"project-title"}>

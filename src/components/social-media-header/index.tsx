@@ -35,7 +35,7 @@ export const SocialMediaHeader = () => {
         alt="besjon-profile"
         style={styles?.socialProfileImage}
       />
-      <button
+      {/* <button
         className={
           "absolute right-1 mt-6 flex justify-center guestbook-btn cursor-pointer"
         }
@@ -45,7 +45,7 @@ export const SocialMediaHeader = () => {
         <div className={"z-10"}>
           GuestBook <BookIcon className={"guestbook-icon text-gray-50"} />
         </div>
-      </button>
+      </button> */}
       <div className={"social-container"} style={styles?.socialContainer}>
         <div
           className={"social-profile-details mt-16"}
