@@ -32,7 +32,7 @@ export const AboutText = () => {
             <div className={'paragraph'} style={  styles?.paragraph }>
                 <p>
                     I am Aldrin, an engineer with passion to develop amazing software and write clean code.
-                    My main focus is on Ai and Robotics but of course I can do anything. After all isn't that
+                    My main focus is on Ai and Robotics but of course I can do anything. After all isn{"'"}t that
                     the purpose of a software {";)"} ?
                 </p>
                 <a href='/aldrin-resume.pdf' download={"Aldrins_resume.pdf"} target='_blank' className={'button'}>Open CV_Skills-Editor</a>
