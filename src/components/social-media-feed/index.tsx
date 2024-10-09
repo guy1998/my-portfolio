@@ -43,7 +43,7 @@ export const SocialAboutMeText = () => {
         will have the time to enjoy this beautiful world we have right here.
         However, I can&apos;t help but wonder will the robots become extremely
         advanced and deny our existence 🤔? {"  "}
-        "A creator cannot be real, this universe is a mistake" - some robot in
+        &quot;A creator cannot be real, this universe is a mistake&quot; - some robot in
         the future probably.
       </p>
       <p className={"text-lg mt-4 mb-4"}>

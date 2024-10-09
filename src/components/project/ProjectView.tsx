@@ -43,6 +43,7 @@ const ProjectElement = (props: any) => {
             height={"100%"}
             style={{ borderRadius: '15px' }}
             src={project.image[0]}
+            alt={`${project.title}-image`}
             loading="lazy"
           />
           <h2  style={{ color: 'purple' }}>{project.title}</h2>
